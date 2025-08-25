@@ -18,3 +18,12 @@ lerna-debug.log*
 .env
 .env.*
 !.env.example
+
+# archives and compressed files of extensions
+*.zip
+*.xpi
+*.rar
+*.7z
+*.tar
+*.gz
+*.tgz
