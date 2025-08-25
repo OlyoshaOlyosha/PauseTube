@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "PauseTube",
+  "version": "1.0",
+  "description": "Расширение для Firefox, которое блокирует YouTube на определенный период времени. Контролируйте просмотр видео и повышайте свою продуктивность. Таймер, пауза, гибкие настройки.",
+  
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "96": "icon.png",
+    "128": "icon.png"
+  },
+  
+  "permissions": [
+    "storage",
+    "tabs",
+    "https://www.youtube.com/*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+
+  "browser_action": {
+    "default_title": "PauseTube",
+    "default_popup": "popup.html"
+  }
+}

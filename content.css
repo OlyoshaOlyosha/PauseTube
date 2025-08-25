@@ -1,0 +1,29 @@
+/* Стили для таймера на странице YouTube */
+#sf-timer {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  font: 15px/1 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  padding: 6px 10px;
+  border-radius: 8px;
+  z-index: 2147483647;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Стили для полноэкранного overlay при блокировке */
+#sf-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.94);
+  color: #fff;
+  font: 34px/1.3 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2147483647;
+  text-align: center;
+  padding: 20px;
+}

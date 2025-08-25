@@ -12,6 +12,7 @@ lerna-debug.log*
 *.swp
 *.swo
 *~
+.lh/
 
 # dotenv environment variable files
 .env
